@@ -15,6 +15,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'primary-c-color': '#f76265',
                     }
                 }
             }
@@ -34,22 +35,20 @@
 </head>
 
 <body class="font-lato">
-    <header>
+    <header class="container mx-auto">
         <!-- Navbar -->
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-primary-c-color py-2 px-10 rounded-full">
 
-
-            <div class="navbar-start hidden md:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
-                    <li><a>Item 3</a></li>
-                    <li><a>Item 5</a></li>
+            <div class="navbar-start hidden lg:flex text-white">
+                <ul class="menu menu-horizontal px-1 text-xl font-medium">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>shop</a></li>
                 </ul>
             </div>
-            <div class="navbar-center flex flex-row-reverse justify-between w-full md:w-fit">
+            <div class="navbar-center flex flex-row-reverse justify-between w-full lg:w-fit text-white">
                 <div class="dropdown ">
-                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -57,21 +56,20 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-auto -ml-10 ">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 4</a></li>
+                        class="text-xl text-black font-medium menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32 -ml-20 ">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>shop</a></li>
                     </ul>
                 </div>
-                <div class="flex flex-row-reverse">
-                    <a class="btn btn-ghost text-xl">Fruit Bank</a>
+                <div class="flex flex-row-reverse items-center">
+                    <a class="btn btn-ghost font-bold text-4xl">Fruit Bank</a>
                     <img src="./images/logo.png" alt="" srcset="">
                 </div>
             </div>
-            <div class="navbar-end hidden md:flex">
-                <label class="input input-bordered flex items-center gap-2">
-                    <input type="text" class="grow" placeholder="Search" />
+            <div class="navbar-end hidden lg:flex">
+                <label class="input rounded-full flex items-center gap-2">
+                    <input type="text" class="grow" placeholder="Search here" />
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                         class="w-4 h-4 opacity-70">
                         <path fill-rule="evenodd"
@@ -80,6 +78,7 @@
                     </svg>
                 </label>
             </div>
+
         </div>
 
     </header>
